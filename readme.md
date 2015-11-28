@@ -5,6 +5,8 @@
 
 
  * Simple message queue.
- * New ES2015 Class Based OOP and imports
- * Webpack server
+ * New ES6 Class Based OOP and imports and Babel
+ * Webpack and Webpack Server
+ * Express/Node
+ * MomentJs
 ```
