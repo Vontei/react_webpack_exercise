@@ -8,16 +8,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      author: 'Nick VonteiO',
+      author: 'Nick',
       messages: []
     };
   }
 
-  addMessage(newContent) {
+
+
+  addMessage(newContent,author) {
     const messages = this.state.messages;
     messages.unshift({
       id: this.state.messages.length,
-      author: this.state.author,
+      author: author,
       content: newContent,
       createdAt: new Date()
     });
@@ -29,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <label>Pick a User Name</label>
         <MessageCreator create={this.addMessage.bind(this)} />
         {
           this.state.messages.map(message => {
