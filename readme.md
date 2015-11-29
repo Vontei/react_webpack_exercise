@@ -12,6 +12,13 @@
 ```
 
 
+## Helpful Reading and References
+The best part of waking up is not folgers in your cup... its docs.
+* [React](https://facebook.github.io/react/docs/getting-started.html)
+* [Webpack](https://webpack.github.io/docs/what-is-webpack.html)
+* [ES6 / Babel](https://babeljs.io/)
+* [Jest](http://facebook.github.io/jest/)
+
 
 
 ## Getting Started with ReactJs, Webpack, Babel, Es6, and Jest
@@ -143,4 +150,20 @@ class HaiBai extends Component {
 ReactDOM.render(<HaiBai />, document.querySelector('#react-mount'));
 ```
 
-Take a minute to collect your blown mind and continue.  Disclaimer: if you are unfamiliar with OOP and the concepts of implementation, inheritance, and hierarchies... Do yourself a favor and put this on pause...read up on OOP, pay your dues, make the mammal say moo (no seriously though), and come back to us. 
+Take a minute to collect your blown mind and continue.  Disclaimer: if you are unfamiliar with OOP and the concepts of implementation, inheritance, and hierarchies... Do yourself a favor and put this on pause...read up on OOP, pay your dues, make the mammal say moo (no seriously though), and come back to us.
+
+## Testing Setup
+Before we move on let's get our testing environment set up.  Test Driven Development is essential to any professional development environment and is critical to your success as a developer. Learning to write tests and testable code will forge excellent habits and dramatically improve your skill set. So just do it alright...
+
+Create a folder/ directory named  /\__tests__.
+
+Webpack has its own integration with Jest, Facebook's testing framework, which is essentially just jasmine with some extra flavor. However, you may want to include this "test" in your package.json to be safe.
+
+```
+"scripts": {
+  "start": "node ./bin/www",
+  "test": "jest"
+}
+```
+
+I'm not going to re-create the Jest Docs, so take a few minutes, or more, and read through them.  Get a sense of how the tests are written, what they are targeting, and if you have jumped ahead or have added this to previous code, then try to consider all scenarios under which your code can break or fail. Testing is an art form in itself, so take time to appreciate it and its implications. 
